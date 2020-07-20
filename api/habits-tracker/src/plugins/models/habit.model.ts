@@ -1,5 +1,5 @@
 // @ts-ignore
-import { withFields, withName, string, boolean, pipe, withProps, withHooks } from "@webiny/commodo";
+import { withFields, withName, string, number, pipe, withProps, withHooks } from "@webiny/commodo";
 import { validation } from "@webiny/validation";
 
 /**
@@ -19,7 +19,7 @@ export default ({ createBase }) =>
             description: string({ validation: validation.create("maxLength:500") }),
 
             // A simple "boolean" field, with the default value set to "true".
-            isNice: boolean({ value: true })
+            habitScore: number()
         })),
         withHooks({
             // We might want to do something before saving the data to a database.

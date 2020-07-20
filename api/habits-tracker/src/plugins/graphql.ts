@@ -52,7 +52,7 @@ const plugin: GraphQLSchemaPlugin = {
                 id: ID
                 title: String
                 description: String
-                isNice: Boolean
+                habitScore: Number
                 createdOn: DateTime
             }
 
@@ -60,17 +60,17 @@ const plugin: GraphQLSchemaPlugin = {
                 id: ID
                 title: String!
                 description: String
-                isNice: Boolean
+                habitScore: Number
             }
 
             input HabitListWhere {
                 title: String
-                isNice: Boolean
+                habitScore: Number
             }
 
             input HabitListSort {
                 title: Int
-                isNice: Boolean
+                habitScore: Number
                 createdOn: Int
             }
 

@@ -16,7 +16,7 @@ export const CREATE_HABIT = /* GraphQL */ `
                     id
                     title
                     description
-                    isNice
+                    habitScore
                 }
                 error ${ERROR_FIELDS}
             }
@@ -39,7 +39,7 @@ export const LIST_HABITS = /* GraphQL */ `
                     id
                     title
                     description
-                    isNice
+                    habitScore
                 }
                 error ${ERROR_FIELDS}
 
