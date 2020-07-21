@@ -51,16 +51,16 @@ const plugin: GraphQLSchemaPlugin = {
             type Habit {
                 id: ID
                 title: String
-                description: String
                 habitScore: Number
+                description: String
                 createdOn: DateTime
             }
 
             input HabitInput {
                 id: ID
                 title: String!
-                description: String
                 habitScore: Number
+                description: String
             }
 
             input HabitListWhere {
